@@ -3,159 +3,828 @@
 
 <head>
     <meta charset="UTF-8">
+    <title>GT5 Mods</title>
+    <meta name="description" content="Welcome to GT5 mods - Grand Theft V player models and other mods and files">
+    <meta name="keywords" content="gt5mods, GT5 mods, Grand Theft V, gt5 menu">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skorax - Gaming Company</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+
     <style>
         body {
-            font-family: 'Roboto', sans-serif;
-            background: #121212;
-            color: #fff;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to right, #e3f2fd, #bbdefb);
             margin: 0;
-            padding: 0;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
         }
 
-        header {
-            background: #1f1f1f;
-            padding: 20px;
+        .title {
             text-align: center;
+            font-size: 2.5rem;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+            color: #fff;
+            background-color: #2196f3;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
 
-        .logo {
-            font-size: 2.5em;
-            color: #00c3ff;
-        }
-
-        nav {
+        .tool-menu {
             text-align: center;
-            padding: 15px;
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+            background-color: #e3f2fd;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
 
-        nav a {
-            margin: 0 15px;
-            color: #00c3ff;
-            text-decoration: none;
-            font-weight: bold;
+        .tool-menu button {
+            margin: 0.5rem;
+            padding: 0.7rem 1.5rem;
+            font-size: 1.2rem;
+            border: 2px solid #2196f3;
+            border-radius: 8px;
+            background-color: #bbdefb;
+            color: #292929;
+            transition: background-color 0.3s ease, color 0.3s ease;
         }
 
-        nav a:hover {
-            color: #ff4081;
+        .tool-menu button:hover {
+            background-color: #2196f3;
+            color: #fff;
         }
 
-        .hero {
+        .model-list {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            padding: 0 1rem;
+            margin-bottom: 20px;
+        }
+
+        .model-card {
+            background: #ffffff;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
-            height: 70vh;
-            background: url('https://via.placeholder.com/1600x800') center/cover no-repeat;
-            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
             position: relative;
+            overflow: hidden;
         }
 
-        .hero-overlay {
+        .model-card::before {
+            content: '';
             position: absolute;
             top: 0;
             left: 0;
-            right: 0;
-            bottom: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(33, 150, 243, 0.1);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .model-card:hover::before {
+            opacity: 1;
+        }
+
+        .model-card:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .model-card img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            transition: transform 0.3s ease;
+        }
+
+        .model-card:hover img {
+            transform: scale(1.05);
+        }
+
+        .model-name {
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+            font-size: 1.2rem;
+            color: #444;
+            text-align: center;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+            transition: opacity 0.3s ease;
+        }
+
+        .model-card:hover .button-group {
+            opacity: 1;
+        }
+
+        .button-group button {
+            transition: transform 0.3s ease;
+        }
+
+        .button-group button:hover {
+            transform: translateY(-3px);
+        }
+
+        button {
+            font-size: 1rem;
+            padding: 0.6rem 1.2rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        .download-btn {
+            background-color: #4caf50;
+            color: white;
+        }
+
+        .copy-btn {
+            background-color: #2196f3;
+            color: white;
+        }
+
+        .download-btn:hover {
+            background-color: #388e3c;
+            transform: scale(1.05);
+        }
+
+        .copy-btn:hover {
+            background-color: #1976d2;
+            transform: scale(1.05);
+        }
+
+        .sendModelNameBtn {
+            background: #4caf50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .sendModelNameBtn:hover {
+            background-color: #388e3c;
+            transform: scale(1.05);
+        }
+
+        .closeSendModelNameMenuBtn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 30px;
+            background: #e7e7e7;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .closeSendModelNameMenuBtn:hover {
+            background-color: #c3c3c3;
+        }
+
+        .crossBtnOnGreenBG {
+            position: absolute;
+            top: 3px;
+            right: 3px;
+            font-size: 30px;
+            background: rgba(0, 0, 0, 0.3);
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .crossBtnOnGreenBG:hover {
             background: rgba(0, 0, 0, 0.5);
         }
 
-        .hero h1 {
-            font-size: 3em;
-            z-index: 1;
-        }
-
-        .hero p {
-            font-size: 1.5em;
-            z-index: 1;
-        }
-
-        .button {
-            margin-top: 20px;
-            padding: 15px 30px;
-            font-size: 1.2em;
-            color: #fff;
-            background: #ff4081;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
-            transition: background 0.3s;
-            z-index: 1;
-        }
-
-        .button:hover {
-            background: #e73370;
-        }
-
-        .content {
-            padding: 50px 20px;
-            text-align: center;
-        }
-
-        .content h2 {
-            font-size: 2em;
-            color: #00c3ff;
-        }
-
-        .content p {
-            font-size: 1.2em;
-            color: #ccc;
-            max-width: 800px;
-            margin: 0 auto;
-            line-height: 1.6;
-        }
-
-        footer {
-            background: #1f1f1f;
-            padding: 20px;
-            text-align: center;
-            color: #777;
-        }
-
-        footer a {
-            color: #00c3ff;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            color: #ff4081;
+        @media (max-width: 768px) {
+            .model-list {
+                grid-template-columns: 1fr;
+                /* grid-template-columns: repeat(2, 1fr); */
+            }
         }
     </style>
+
 </head>
 
 <body>
-    <header>
-        <div class="logo">Skorax</div>
-    </header>
 
-    <nav>
-        <a href="#">Home</a>
-        <a href="#about">About Us</a>
-        <a href="#games">Games</a>
-        <a href="#contact">Contact</a>
-    </nav>
+    <h1 class="title">GT5 Custom Player Models</h1>
 
-    <div class="hero">
-        <div class="hero-overlay"></div>
-        <div>
-            <h1>Welcome to Skorax</h1>
-            <p>The next level of immersive gaming experiences.</p>
-            <button class="button">Discover More</button>
+    <div class="tool-menu">
+        <button onclick="OpenRequestModelMenu()">Request Model</button>
+        <button onclick="OpenContactUSMenu()">Contact US</button>
+    </div>
+
+    <div id="requestModelMenu"
+        style="display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.7); justify-content: center; align-items: center; z-index: 999; padding: 1rem;">
+
+        <div
+            style="background: white; padding: 1.2rem; border-radius: 10px; width: 100%; max-width: 360px; box-sizing: border-box; position: relative; text-align: center;">
+
+            <button class="closeSendModelNameMenuBtn" onclick="CloseRequestModelMenu()">X</button>
+            <h3 style="margin-top: 0px;">Request A Model</h3>
+            <input id="modelNameInputField" type="text" placeholder="Enter model name"
+                style="width: 90%; padding: 10px; margin-top: 10px; margin-bottom: 25px; border: 1px solid #7d7d7d; border-radius: 6px;">
+            <br>
+            <button class="sendModelNameBtn" onclick="requestModelNameSend()">Send</button>
+
+        </div>
+
+    </div>
+
+    <div id="requestModelMenuSuccess"
+        style="display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.7); justify-content: center; align-items: center; z-index: 999; padding: 1rem;">
+        <div
+            style="background: #28a745; padding: 1.2rem; border-radius: 10px; width: 100%; max-width: 360px; box-sizing: border-box; position: relative; text-align: center;">
+            <button class="crossBtnOnGreenBG" onclick="hideSuccessPopup()">X</button>
+            <h3 style="color: white; margin-top: 35px; margin-bottom: 35px;">Thanks For Sending A Model Request, It will
+                be added soon, Please visit after some days :)</h3>
         </div>
     </div>
 
-    <div class="content" id="about">
-        <h2>About Us</h2>
-        <p>Skorax is an upcoming gaming company dedicated to pushing the boundaries of immersive gameplay. Our mission
-            is to create innovative games that captivate audiences and redefine interactive entertainment. We believe in
-            delivering the best quality experience to our players.</p>
+    <div id="contactUSMenu"
+        style="display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.7); justify-content: center; align-items: center; z-index: 999; padding: 1rem;">
+        <div
+            style="background: #28a745; padding: 1.2rem; border-radius: 10px; width: 100%; max-width: 360px; box-sizing: border-box; position: relative; text-align: center;">
+            <button class="crossBtnOnGreenBG" onclick="CloseContactUSMenu()">X</button>
+            <h3 style="color: white; margin-top: 35px; margin-bottom: 35px;">You can contact us at - contact@itamods.com
+                - For any problem related to itamods.com feel free to send us an email.</h3>
+        </div>
     </div>
 
-    <footer>
-        <p>Follow us on <a href="#">Twitter</a> | <a href="#">Instagram</a> | <a href="#">Facebook</a></p>
-        <p>&copy; 2024 Skorax. All rights reserved.</p>
-    </footer>
+    <div class="model-list">
+
+        <div class="model-card">
+            <img loading="lazy" src="thumbnails/SpiderMan_Red.jpg" alt="SpiderMan Red">
+            <div class="model-name">SpiderMan Red</div>
+            <div class="button-group">
+                <a href="characterModels/SpiderMan_Red.fbx" download><button class="download-btn">Download</button></a>
+                <button class="copy-btn" onclick="copyToClipboard('characterModels/SpiderMan_Red.fbx')">Copy
+                    Link</button>
+            </div>
+        </div>
+
+        <div class="model-card">
+            <img loading="lazy" src="thumbnails/IronMan_New.jpg" alt="IronMan New">
+            <div class="model-name">IronMan New</div>
+            <div class="button-group">
+                <a href="characterModels/IronMan_New.fbx" download><button class="download-btn">Download</button></a>
+                <button class="copy-btn" onclick="copyToClipboard('characterModels/IronMan_New.fbx')">Copy Link</button>
+            </div>
+        </div>
+
+        <div class="model-card">
+            <img loading="lazy" src="thumbnails/Batman.jpg" alt="Batman">
+            <div class="model-name">Batman</div>
+            <div class="button-group">
+                <a href="characterModels/Batman.fbx" download><button class="download-btn">Download</button></a>
+                <button class="copy-btn" onclick="copyToClipboard('characterModels/Batman.fbx')">Copy Link</button>
+            </div>
+        </div>
+
+        <div class="model-card">
+            <img loading="lazy" src="thumbnails/Goku.jpg" alt="Goku">
+            <div class="model-name">Goku</div>
+            <div class="button-group">
+                <a href="characterModels/Goku.fbx" download><button class="download-btn">Download</button></a>
+                <button class="copy-btn" onclick="copyToClipboard('characterModels/Goku.fbx')">Copy Link</button>
+            </div>
+        </div>
+
+        <div class="model-card">
+            <img loading="lazy" src="thumbnails/Thanos.jpg" alt="Thanos">
+            <div class="model-name">Thanos</div>
+            <div class="button-group">
+                <a href="characterModels/Thanos.fbx" download><button class="download-btn">Download</button></a>
+                <button class="copy-btn" onclick="copyToClipboard('characterModels/Thanos.fbx')">Copy Link</button>
+            </div>
+        </div>
+
+        <div class="model-card">
+            <img loading="lazy" src="thumbnails/Udin_Din_Din.jpg" alt="Udin Din Din">
+            <div class="model-name">Udin Din Din</div>
+            <div class="button-group">
+                <a href="characterModels/Udin_Din_Din.fbx" download><button class="download-btn">Download</button></a>
+                <button class="copy-btn" onclick="copyToClipboard('characterModels/Udin_Din_Din.fbx')">Copy
+                    Link</button>
+            </div>
+        </div>
+
+        <div class="model-card">
+            <img loading="lazy" src="thumbnails/Krrish.jpg" alt="Krrish">
+            <div class="model-name">Krrish</div>
+            <div class="button-group">
+                <a href="characterModels/Krrish.fbx" download><button class="download-btn">Download</button></a>
+                <button class="copy-btn" onclick="copyToClipboard('characterModels/Krrish.fbx')">Copy Link</button>
+            </div>
+        </div>
+
+        <div class="model-card">
+            <img loading="lazy" src="thumbnails/Tung_Tung_Sahur.jpg" alt="Tung Tung Sahur">
+            <div class="model-name">Tung Tung Sahur</div>
+            <div class="button-group">
+                <a href="characterModels/Tung_Tung_Sahur.fbx" download><button
+                        class="download-btn">Download</button></a>
+                <button class="copy-btn" onclick="copyToClipboard('characterModels/Tung_Tung_Sahur.fbx')">Copy
+                    Link</button>
+            </div>
+        </div>
+
+        <div class="model-card">
+            <img loading="lazy" src="thumbnails/Naruto.jpg" alt="Naruto">
+            <div class="model-name">Naruto</div>
+            <div class="button-group">
+                <a href="characterModels/Naruto.fbx" download><button class="download-btn">Download</button></a>
+                <button class="copy-btn" onclick="copyToClipboard('characterModels/Naruto.fbx')">Copy Link</button>
+            </div>
+        </div>
+
+        <div class="model-card">
+            <img loading="lazy" src="thumbnails/Ms_Dhoni.jpg" alt="Ms Dhoni">
+            <div class="model-name">Ms Dhoni</div>
+            <div class="button-group">
+                <a href="characterModels/Ms_Dhoni.fbx" download><button class="download-btn">Download</button></a>
+                <button class="copy-btn" onclick="copyToClipboard('characterModels/Ms_Dhoni.fbx')">Copy Link</button>
+            </div>
+        </div>
+
+        <div class="model-card">
+            <img loading="lazy" src="thumbnails/Virat_Kohli.jpg" alt="Virat Kohli">
+            <div class="model-name">Virat Kohli</div>
+            <div class="button-group">
+                <a href="characterModels/Virat_Kohli.fbx" download><button class="download-btn">Download</button></a>
+                <button class="copy-btn" onclick="copyToClipboard('characterModels/Virat_Kohli.fbx')">Copy Link</button>
+            </div>
+        </div>
+
+        <div class="model-card">
+            <img loading="lazy" src="thumbnails/Alien.jpg" alt="Alien">
+            <div class="model-name">Alien</div>
+            <div class="button-group">
+                <a href="characterModels/Alien.fbx" download><button class="download-btn">Download</button></a>
+                <button class="copy-btn" onclick="copyToClipboard('characterModels/Alien.fbx')">Copy Link</button>
+            </div>
+        </div>
+
+        <div class="model-card">
+            <img loading="lazy" src="thumbnails/Army_Officer.jpg" alt="Army Officer">
+            <div class="model-name">Army Officer</div>
+            <div class="button-group">
+                <a href="characterModels/Army_Officer.fbx" download><button class="download-btn">Download</button></a>
+                <button class="copy-btn" onclick="copyToClipboard('characterModels/Army_Officer.fbx')">Copy
+                    Link</button>
+            </div>
+        </div>
+
+        <div class="model-card">
+            <img loading="lazy" src="thumbnails/Ben_10.jpg" alt="Ben 10">
+            <div class="model-name">Ben 10</div>
+            <div class="button-group">
+                <a href="characterModels/Ben_10.fbx" download><button class="download-btn">Download</button></a>
+                <button class="copy-btn" onclick="copyToClipboard('characterModels/Ben_10.fbx')">Copy Link</button>
+            </div>
+        </div>
+
+        <div class="model-card">
+            <img loading="lazy" src="thumbnails/BodyGuard.jpg" alt="BodyGuard">
+            <div class="model-name">BodyGuard</div>
+            <div class="button-group">
+                <a href="characterModels/BodyGuard.fbx" download><button class="download-btn">Download</button></a>
+                <button class="copy-btn" onclick="copyToClipboard('characterModels/BodyGuard.fbx')">Copy Link</button>
+            </div>
+        </div>
+
+        <div class="model-card">
+            <img loading="lazy" src="thumbnails/CaptainMarvel.jpg" alt="CaptainMarvel">
+            <div class="model-name">CaptainMarvel</div>
+            <div class="button-group">
+                <a href="characterModels/CaptainMarvel.fbx" download><button class="download-btn">Download</button></a>
+                <button class="copy-btn" onclick="copyToClipboard('characterModels/CaptainMarvel.fbx')">Copy
+                    Link</button>
+            </div>
+        </div>
+
+        <div class="model-card">
+            <img loading="lazy" src="thumbnails/Captain_America.jpg" alt="Captain America">
+            <div class="model-name">Captain America</div>
+            <div class="button-group">
+                <a href="characterModels/Captain_America.fbx" download><button
+                        class="download-btn">Download</button></a>
+                <button class="copy-btn" onclick="copyToClipboard('characterModels/Captain_America.fbx')">Copy
+                    Link</button>
+            </div>
+        </div>
+
+        <div class="model-card">
+            <img loading="lazy" src="thumbnails/CarryMinati.jpg" alt="CarryMinati">
+            <div class="model-name">CarryMinati</div>
+            <div class="button-group">
+                <a href="characterModels/CarryMinati.fbx" download><button class="download-btn">Download</button></a>
+                <button class="copy-btn" onclick="copyToClipboard('characterModels/CarryMinati.fbx')">Copy Link</button>
+            </div>
+        </div>
+
+        <div class="model-card">
+            <img loading="lazy" src="thumbnails/Chingum.jpg" alt="Chingum">
+            <div class="model-name">Chingum</div>
+            <div class="button-group">
+                <a href="characterModels/Chingum.fbx" download><button class="download-btn">Download</button></a>
+                <button class="copy-btn" onclick="copyToClipboard('characterModels/Chingum.fbx')">Copy Link</button>
+            </div>
+        </div>
+
+        <div class="model-card">
+            <img loading="lazy" src="thumbnails/DeadPool.jpg" alt="DeadPool">
+            <div class="model-name">DeadPool</div>
+            <div class="button-group">
+                <a href="characterModels/DeadPool.fbx" download><button class="download-btn">Download</button></a>
+                <button class="copy-btn" onclick="copyToClipboard('characterModels/DeadPool.fbx')">Copy Link</button>
+            </div>
+        </div>
+
+        <div class="model-card">
+            <img loading="lazy" src="thumbnails/DJAlok.jpg" alt="DJAlok">
+            <div class="model-name">DJAlok</div>
+            <div class="button-group">
+                <a href="characterModels/DJAlok.fbx" download><button class="download-btn">Download</button></a>
+                <button class="copy-btn" onclick="copyToClipboard('characterModels/DJAlok.fbx')">Copy Link</button>
+            </div>
+        </div>
+
+        <div class="model-card">
+            <img loading="lazy" src="thumbnails/Doraemon.jpg" alt="Doraemon">
+            <div class="model-name">Doraemon</div>
+            <div class="button-group">
+                <a href="characterModels/Doraemon.fbx" download><button class="download-btn">Download</button></a>
+                <button class="copy-btn" onclick="copyToClipboard('characterModels/Doraemon.fbx')">Copy Link</button>
+            </div>
+        </div>
+
+        <div class="model-card">
+            <img loading="lazy" src="thumbnails/Flash.jpg" alt="Flash">
+            <div class="model-name">Flash</div>
+            <div class="button-group">
+                <a href="characterModels/Flash.fbx" download><button class="download-btn">Download</button></a>
+                <button class="copy-btn" onclick="copyToClipboard('characterModels/Flash.fbx')">Copy Link</button>
+            </div>
+        </div>
+
+        <div class="model-card">
+            <img loading="lazy" src="thumbnails/FreeFire_GreenCriminal.jpg" alt="FreeFire GreenCriminal">
+            <div class="model-name">FreeFire GreenCriminal</div>
+            <div class="button-group">
+                <a href="characterModels/FreeFire_GreenCriminal.fbx" download><button
+                        class="download-btn">Download</button></a>
+                <button class="copy-btn" onclick="copyToClipboard('characterModels/FreeFire_GreenCriminal.fbx')">Copy
+                    Link</button>
+            </div>
+        </div>
+
+        <div class="model-card">
+            <img loading="lazy" src="thumbnails/FreeFire_Raistar.jpg" alt="FreeFire Raistar">
+            <div class="model-name">FreeFire Raistar</div>
+            <div class="button-group">
+                <a href="characterModels/FreeFire_Raistar.fbx" download><button
+                        class="download-btn">Download</button></a>
+                <button class="copy-btn" onclick="copyToClipboard('characterModels/FreeFire_Raistar.fbx')">Copy
+                    Link</button>
+            </div>
+        </div>
+
+        <div class="model-card">
+            <img loading="lazy" src="thumbnails/FreeFire_RedCriminal.jpg" alt="FreeFire RedCriminal">
+            <div class="model-name">FreeFire RedCriminal</div>
+            <div class="button-group">
+                <a href="characterModels/FreeFire_RedCriminal.fbx" download><button
+                        class="download-btn">Download</button></a>
+                <button class="copy-btn" onclick="copyToClipboard('characterModels/FreeFire_RedCriminal.fbx')">Copy
+                    Link</button>
+            </div>
+        </div>
+
+        <div class="model-card">
+            <img loading="lazy" src="thumbnails/GodZilla.jpg" alt="GodZilla">
+            <div class="model-name">GodZilla</div>
+            <div class="button-group">
+                <a href="characterModels/GodZilla.fbx" download><button class="download-btn">Download</button></a>
+                <button class="copy-btn" onclick="copyToClipboard('characterModels/GodZilla.fbx')">Copy Link</button>
+            </div>
+        </div>
+
+        <div class="model-card">
+            <img loading="lazy" src="thumbnails/Gojo.jpg" alt="Gojo">
+            <div class="model-name">Gojo</div>
+            <div class="button-group">
+                <a href="characterModels/Gojo.fbx" download><button class="download-btn">Download</button></a>
+                <button class="copy-btn" onclick="copyToClipboard('characterModels/Gojo.fbx')">Copy Link</button>
+            </div>
+        </div>
+
+        <div class="model-card">
+            <img loading="lazy" src="thumbnails/IronMan_Old.jpg" alt="IronMan Old">
+            <div class="model-name">IronMan Old</div>
+            <div class="button-group">
+                <a href="characterModels/IronMan_Old.fbx" download><button class="download-btn">Download</button></a>
+                <button class="copy-btn" onclick="copyToClipboard('characterModels/IronMan_Old.fbx')">Copy Link</button>
+            </div>
+        </div>
+
+        <div class="model-card">
+            <img loading="lazy" src="thumbnails/Joker.jpg" alt="Joker">
+            <div class="model-name">Joker</div>
+            <div class="button-group">
+                <a href="characterModels/Joker.fbx" download><button class="download-btn">Download</button></a>
+                <button class="copy-btn" onclick="copyToClipboard('characterModels/Joker.fbx')">Copy Link</button>
+            </div>
+        </div>
+
+        <div class="model-card">
+            <img loading="lazy" src="thumbnails/LavaTitan.jpg" alt="LavaTitan">
+            <div class="model-name">LavaTitan</div>
+            <div class="button-group">
+                <a href="characterModels/LavaTitan.fbx" download><button class="download-btn">Download</button></a>
+                <button class="copy-btn" onclick="copyToClipboard('characterModels/LavaTitan.fbx')">Copy Link</button>
+            </div>
+        </div>
+
+        <div class="model-card">
+            <img loading="lazy" src="thumbnails/Zombie.jpg" alt="Zombie">
+            <div class="model-name">Zombie</div>
+            <div class="button-group">
+                <a href="characterModels/Zombie.fbx" download><button class="download-btn">Download</button></a>
+                <button class="copy-btn" onclick="copyToClipboard('characterModels/Zombie.fbx')">Copy Link</button>
+            </div>
+        </div>
+
+        <div class="model-card">
+            <img loading="lazy" src="thumbnails/Michael_Gta5.jpg" alt="Michael Gta5">
+            <div class="model-name">Michael Gta5</div>
+            <div class="button-group">
+                <a href="characterModels/Michael_Gta5.fbx" download><button class="download-btn">Download</button></a>
+                <button class="copy-btn" onclick="copyToClipboard('characterModels/Michael_Gta5.fbx')">Copy
+                    Link</button>
+            </div>
+        </div>
+
+        <div class="model-card">
+            <img loading="lazy" src="thumbnails/Franklin_Gta5.jpg" alt="Franklin Gta5">
+            <div class="model-name">Franklin Gta5</div>
+            <div class="button-group">
+                <a href="characterModels/Franklin_Gta5.fbx" download><button class="download-btn">Download</button></a>
+                <button class="copy-btn" onclick="copyToClipboard('characterModels/Franklin_Gta5.fbx')">Copy
+                    Link</button>
+            </div>
+        </div>
+
+        <div class="model-card">
+            <img loading="lazy" src="thumbnails/Trevor_Gta5.jpg" alt="Trevor Gta5">
+            <div class="model-name">Trevor Gta5</div>
+            <div class="button-group">
+                <a href="characterModels/Trevor_Gta5.fbx" download><button class="download-btn">Download</button></a>
+                <button class="copy-btn" onclick="copyToClipboard('characterModels/Trevor_Gta5.fbx')">Copy Link</button>
+            </div>
+        </div>
+
+        <div class="model-card">
+            <img loading="lazy" src="thumbnails/Motu_MotuPatlu.jpg" alt="Motu MotuPatlu">
+            <div class="model-name">Motu MotuPatlu</div>
+            <div class="button-group">
+                <a href="characterModels/Motu_MotuPatlu.fbx" download><button class="download-btn">Download</button></a>
+                <button class="copy-btn" onclick="copyToClipboard('characterModels/Motu_MotuPatlu.fbx')">Copy
+                    Link</button>
+            </div>
+        </div>
+
+        <div class="model-card">
+            <img loading="lazy" src="thumbnails/Nobita.jpg" alt="Nobita">
+            <div class="model-name">Nobita</div>
+            <div class="button-group">
+                <a href="characterModels/Nobita.fbx" download><button class="download-btn">Download</button></a>
+                <button class="copy-btn" onclick="copyToClipboard('characterModels/Nobita.fbx')">Copy Link</button>
+            </div>
+        </div>
+
+        <div class="model-card">
+            <img loading="lazy" src="thumbnails/Oggy.jpg" alt="Oggy">
+            <div class="model-name">Oggy</div>
+            <div class="button-group">
+                <a href="characterModels/Oggy.fbx" download><button class="download-btn">Download</button></a>
+                <button class="copy-btn" onclick="copyToClipboard('characterModels/Oggy.fbx')">Copy Link</button>
+            </div>
+        </div>
+
+        <div class="model-card">
+            <img loading="lazy" src="thumbnails/Patlu_MotuPatlu.jpg" alt="Patlu MotuPatlu">
+            <div class="model-name">Patlu MotuPatlu</div>
+            <div class="button-group">
+                <a href="characterModels/Patlu_MotuPatlu.fbx" download><button
+                        class="download-btn">Download</button></a>
+                <button class="copy-btn" onclick="copyToClipboard('characterModels/Patlu_MotuPatlu.fbx')">Copy
+                    Link</button>
+            </div>
+        </div>
+
+        <div class="model-card">
+            <img loading="lazy" src="thumbnails/PM_Modi.jpg" alt="PM Modi">
+            <div class="model-name">PM Modi</div>
+            <div class="button-group">
+                <a href="characterModels/PM_Modi.fbx" download><button class="download-btn">Download</button></a>
+                <button class="copy-btn" onclick="copyToClipboard('characterModels/PM_Modi.fbx')">Copy Link</button>
+            </div>
+        </div>
+
+        <div class="model-card">
+            <img loading="lazy" src="thumbnails/Pushpa.jpg" alt="Pushpa">
+            <div class="model-name">Pushpa</div>
+            <div class="button-group">
+                <a href="characterModels/Pushpa.fbx" download><button class="download-btn">Download</button></a>
+                <button class="copy-btn" onclick="copyToClipboard('characterModels/Pushpa.fbx')">Copy Link</button>
+            </div>
+        </div>
+
+        <div class="model-card">
+            <img loading="lazy" src="thumbnails/RedHulk.jpg" alt="RedHulk">
+            <div class="model-name">RedHulk</div>
+            <div class="button-group">
+                <a href="characterModels/RedHulk.fbx" download><button class="download-btn">Download</button></a>
+                <button class="copy-btn" onclick="copyToClipboard('characterModels/RedHulk.fbx')">Copy Link</button>
+            </div>
+        </div>
+
+        <div class="model-card">
+            <img loading="lazy" src="thumbnails/ScaryTeacher.jpg" alt="ScaryTeacher">
+            <div class="model-name">ScaryTeacher</div>
+            <div class="button-group">
+                <a href="characterModels/ScaryTeacher.fbx" download><button class="download-btn">Download</button></a>
+                <button class="copy-btn" onclick="copyToClipboard('characterModels/ScaryTeacher.fbx')">Copy
+                    Link</button>
+            </div>
+        </div>
+
+        <div class="model-card">
+            <img loading="lazy" src="thumbnails/ShahrukhKhan.jpg" alt="ShahrukhKhan">
+            <div class="model-name">ShahrukhKhan</div>
+            <div class="button-group">
+                <a href="characterModels/ShahrukhKhan.fbx" download><button class="download-btn">Download</button></a>
+                <button class="copy-btn" onclick="copyToClipboard('characterModels/ShahrukhKhan.fbx')">Copy
+                    Link</button>
+            </div>
+        </div>
+
+        <div class="model-card">
+            <img loading="lazy" src="thumbnails/Shinchan.jpg" alt="Shinchan">
+            <div class="model-name">Shinchan</div>
+            <div class="button-group">
+                <a href="characterModels/Shinchan.fbx" download><button class="download-btn">Download</button></a>
+                <button class="copy-btn" onclick="copyToClipboard('characterModels/Shinchan.fbx')">Copy Link</button>
+            </div>
+        </div>
+
+        <div class="model-card">
+            <img loading="lazy" src="thumbnails/SpiderMan_Black.jpg" alt="SpiderMan Black">
+            <div class="model-name">SpiderMan Black</div>
+            <div class="button-group">
+                <a href="characterModels/SpiderMan_Black.fbx" download><button
+                        class="download-btn">Download</button></a>
+                <button class="copy-btn" onclick="copyToClipboard('characterModels/SpiderMan_Black.fbx')">Copy
+                    Link</button>
+            </div>
+        </div>
+
+        <div class="model-card">
+            <img loading="lazy" src="thumbnails/SquidGame_Doll.jpg" alt="SquidGame Doll">
+            <div class="model-name">SquidGame Doll</div>
+            <div class="button-group">
+                <a href="characterModels/SquidGame_Doll.fbx" download><button class="download-btn">Download</button></a>
+                <button class="copy-btn" onclick="copyToClipboard('characterModels/SquidGame_Doll.fbx')">Copy
+                    Link</button>
+            </div>
+        </div>
+
+        <div class="model-card">
+            <img loading="lazy" src="thumbnails/SquidGame_Soldier.jpg" alt="SquidGame Soldier">
+            <div class="model-name">SquidGame Soldier</div>
+            <div class="button-group">
+                <a href="characterModels/SquidGame_Soldier.fbx" download><button
+                        class="download-btn">Download</button></a>
+                <button class="copy-btn" onclick="copyToClipboard('characterModels/SquidGame_Soldier.fbx')">Copy
+                    Link</button>
+            </div>
+        </div>
+
+        <div class="model-card">
+            <img loading="lazy" src="thumbnails/TechnoGamerz.jpg" alt="TechnoGamerz">
+            <div class="model-name">TechnoGamerz</div>
+            <div class="button-group">
+                <a href="characterModels/TechnoGamerz.fbx" download><button class="download-btn">Download</button></a>
+                <button class="copy-btn" onclick="copyToClipboard('characterModels/TechnoGamerz.fbx')">Copy
+                    Link</button>
+            </div>
+        </div>
+
+        <div class="model-card">
+            <img loading="lazy" src="thumbnails/Thor.jpg" alt="Thor">
+            <div class="model-name">Thor</div>
+            <div class="button-group">
+                <a href="characterModels/Thor.fbx" download><button class="download-btn">Download</button></a>
+                <button class="copy-btn" onclick="copyToClipboard('characterModels/Thor.fbx')">Copy Link</button>
+            </div>
+        </div>
+
+        <div class="model-card">
+            <img loading="lazy" src="thumbnails/TonyStark.jpg" alt="TonyStark">
+            <div class="model-name">TonyStark</div>
+            <div class="button-group">
+                <a href="characterModels/TonyStark.fbx" download><button class="download-btn">Download</button></a>
+                <button class="copy-btn" onclick="copyToClipboard('characterModels/TonyStark.fbx')">Copy Link</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+
+        function copyToClipboard(link) {
+            const fullUrl = window.location.origin + '/' + link;
+            navigator.clipboard.writeText(fullUrl)
+                .then(() => alert('Link copied to clipboard'))
+                .catch(() => alert('Failed to copy link.'));
+        }
+
+        function OpenRequestModelMenu() {
+            document.getElementById("requestModelMenu").style.display = "flex";
+        }
+
+        function CloseRequestModelMenu() {
+            document.getElementById("requestModelMenu").style.display = "none";
+        }
+
+        function showSuccessPopup() {
+            document.getElementById("requestModelMenuSuccess").style.display = "flex";
+        }
+
+        function hideSuccessPopup() {
+            document.getElementById("requestModelMenuSuccess").style.display = "none";
+        }
+
+        function OpenContactUSMenu() {
+            document.getElementById("contactUSMenu").style.display = "flex";
+        }
+
+        function CloseContactUSMenu() {
+            document.getElementById("contactUSMenu").style.display = "none";
+        }
+
+        function requestModelNameSend() {
+
+            const input = document.getElementById("modelNameInputField").value.trim();
+            if (!input) {
+                alert("Please enter a model name");
+                return;
+            }
+
+            fetch("saveModelName.php", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/x-www-form-urlencoded"
+                },
+                body: "modelName=" + encodeURIComponent(input)
+            })
+                .then(response => response.text())
+                .then(data => {
+                    if (data.trim() === "success") {
+                        CloseRequestModelMenu();
+                        showSuccessPopup();
+                    }
+                });
+        }
+
+
+
+        //fetch("dau.php");
+
+    </script>
+
 </body>
 
 </html>
