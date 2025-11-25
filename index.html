@@ -1,46 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skorax - Gaming Company</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skorax</title>
+  <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/ravi2026131/testwebsite/main/skorax%20favicon-modified.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+    .logo img {
+      width: 300px;
+    }
+    .desc {
+      margin-top: 20px;
+      font-size: 20px;
+      opacity: 0.9;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 200;
+    }
+    .socials {
+      margin-top: 40px;
+      display: flex;
+      gap: 25px;
+    }
+    .socials a {
+      width: 42px;
+      height: 42px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(8px);
+      transition: 0.25s ease;
+      text-decoration: none;
+    }
+    .socials a:hover {
+      background: rgba(255, 255, 255, 0.18);
+      transform: translateY(-4px);
+    }
+    .socials img {
+      width: 22px;
+      filter: invert(1);
+      opacity: 0.9;
+      transition: opacity 0.25s ease;
+    }
+    .socials a:hover img {
+      opacity: 1;
+    }
+  </style>
 </head>
-
 <body>
-    <header>
-        <h1>Welcome to Skorax</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#games">Games</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="home">
-            <h2>Home</h2>
-            <p>Welcome to Skorax, the ultimate gaming experience.</p>
-        </section>
-        <section id="games">
-            <h2>Our Games</h2>
-            <p>Explore our exciting range of games.</p>
-        </section>
-        <section id="about">
-            <h2>About Us</h2>
-            <p>Learn more about Skorax and our mission.</p>
-        </section>
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>Get in touch with us for more information.</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2023 Skorax. All rights reserved.</p>
-    </footer>
-</body>
+  <div class="logo">
+    <img src="https://raw.githubusercontent.com/ravi2026131/testwebsite/main/image%20912.png" alt="Skorax Logo" />
+  </div>
 
+  <div class="desc">Skorax is mobile games developer and publisher.</div>
+
+  <div class="socials">
+    <a href="https://play.google.com/store/apps/developer?id=Skorax"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/googleplay.svg" /></a>
+    <a href="https://www.youtube.com/@skorax"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg" /></a>
+    <a href="https://www.instagram.com/_skorax"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" /></a>
+    <a href="https://x.com/skorax_"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/x.svg" /></a>
+  </div>
+</body>
 </html>
