@@ -6,6 +6,20 @@ google.com, pub-5914023817376023, DIRECT, f08c47fec0942fa0
 #Meta
 facebook.com, 481972428056746, DIRECT, c3e20eee3f780d68
 
+#Ad.Plus
+ad.plus, 23325769715, DIRECT
+google.com, pub-4573231550355221, RESELLER, f08c47fec0942fa0
+pubmatic.com, 160907, RESELLER, 5d62403b186f2ace
+indexexchange.com, 194273, RESELLER, 50b1c356f2c5c8fc
+rubiconproject.com, 24442, RESELLER, 0bfd66d529a55807
+media.net, 8CU5DERG1, DIRECT
+onetag.com, 7a07637ca4dd99f-OB, DIRECT
+rhythmone.com, 895733750, DIRECT, a670c89d4a324e47
+video.unrulymedia.com, 895733750, DIRECT
+sovrn.com, 357833, DIRECT, fafdf38b16bf6b2b
+lijit.com, 357833, DIRECT, fafdf38b16bf6b2b
+lijit.com, 357833-eb, DIRECT, fafdf38b16bf6b2b
+
 #Liftoff
 vungle.com,691c3c66f84dffcb570869a4,DIRECT,c107d686becd2d77
 33across.com,001Pg0000197KcKIAU,RESELLER,bbea06d9c4d2853c
