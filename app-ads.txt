@@ -40,8 +40,8 @@ admagnetix.io, 202141, RESELLER
 admanmedia.com, 552, RESELLER
 admanmedia.com, 2151, RESELLER
 admanmedia.com, 43, RESELLER
-admanmedia.com, 726, RESELLER
 admanmedia.com, 2234, DIRECT
+admanmedia.com, 726, RESELLER
 admixer.co.kr, 1370, RESELLER
 adorphic.com, 4061, RESELLER
 adorphic.com, 4062, DIRECT
@@ -105,8 +105,8 @@ adyoulike.com, b4bf4fdd9b0b915f746f6747ff432bde, RESELLER, 4ad745ead2958bf7
 adyoulike.com, 283e6e26614a07d896da0933c3719127, RESELLER, 4ad745ead2958bf7
 adyoulike.com, 3bd59827ca27896e43d7629454587f70, DIRECT
 adyoulike.com, 4d5014f8da11fc0a70ebbda5d4537935, RESELLER
-adyoulike.com, 7463c359225e043c111036d7a29affa5, RESELLER
 adyoulike.com, a2226c27fc2a6773f6a2b365e013513a, RESELLER
+adyoulike.com, 7463c359225e043c111036d7a29affa5, RESELLER
 algorix.co, 604605, RESELLER, 5b394c12fea27a1d
 algorix.co, 54190, RESELLER
 algorix.co, 604610, DIRECT, 5b394c12fea27a1d
@@ -298,10 +298,10 @@ improvedigital.com, 2478, RESELLER
 improvedigital.com, 2174_303, RESELLER
 improvedigital.com, 2539, RESELLER
 improvedigital.com, 1708, RESELLER
-improvedigital.com, 2050, RESELLER
 improvedigital.com, 1806, RESELLER
 improvedigital.com, 2736, RESELLER
 improvedigital.com, 2174, RESELLER
+improvedigital.com, 2050, RESELLER
 improvedigital.com, 1797, RESELLER
 improvedigital.com, 1623, RESELLER
 improvedigital.com, 2507, RESELLER
@@ -312,8 +312,8 @@ indexexchange.com, 191332, RESELLER, 50b1c356f2c5c8fc
 indexexchange.com, 194730, RESELLER, 50b1c356f2c5c8fc
 indexexchange.com, 214076, RESELLER, 50b1c356f2c5c8fc
 indexexchange.com, 207402, RESELLER, 50b1c356f2c5c8fc
-indexexchange.com, 192410, RESELLER, 50b1c356f2c5c8fc
 indexexchange.com, 196124, RESELLER
+indexexchange.com, 192410, RESELLER, 50b1c356f2c5c8fc
 indexexchange.com, 184738, RESELLER
 inmobi.com, 55049d2e109d4ac1820ca1432dda4e13, RESELLER, 83e75a7ae333ca9d
 inmobi.com, ef083d721beb4c0f8776ced01e262c03, RESELLER, 83e75a7ae333ca9d
@@ -520,11 +520,12 @@ pubmatic.com, 165157, RESELLER, 5d62403b186f2ace
 pubmatic.com, 157288, RESELLER, 5d62403b186f2ace
 pubmatic.com, 157663, RESELLER, 5d62403b186f2ace
 pubmatic.com, 159277, RESELLER
-pubmatic.com, 160080, RESELLER, 5d62403b186f2ace
 pubmatic.com, 157230, RESELLER, 5d62403b186f2ace
 pubmatic.com, 156451, RESELLER, 5d62403b186f2ace
 pubmatic.com, 158481, RESELLER, 5d62403b186f2ace
 pubmatic.com, 165117, RESELLER, 5d62403b186f2ace
+pubmatic.com, 160080, RESELLER, 5d62403b186f2ace
+pubmatic.com, 167945, RESELLER, 5d62403b186f2ace
 pubmatic.com, 158651, RESELLER, 5d62403b186f2ace
 pubmatic.com, 159035, RESELLER, 5d62403b186f2ace
 pubmatic.com, 156517, RESELLER, 5d62403b186f2ace
@@ -634,11 +635,11 @@ rubiconproject.com, 24386, RESELLER, 0bfd66d529a55807
 rubiconproject.com, 20598, RESELLER, 0bfd66d529a55807
 rubiconproject.com, 17974, RESELLER, 0bfd66d529a55807
 rubiconproject.com, 15268, RESELLER, 0bfd66d529a55807
-rubiconproject.com, 18020, RESELLER, 0bfd66d529a55807
 rubiconproject.com, 18630, RESELLER, 0bfd66d529a55807
 rubiconproject.com, 25906, RESELLER, 0bfd66d529a55807
 rubiconproject.com, 25908, RESELLER, 0bfd66d529a55807
 rubiconproject.com, 14558, RESELLER, 0bfd66d529a55807
+rubiconproject.com, 18020, RESELLER, 0bfd66d529a55807
 rubiconproject.com, 12266, RESELLER, 0bfd66d529a55807
 rubiconproject.com, 20050, RESELLER, 0bfd66d529a55807
 rubiconproject.com, 11726, RESELLER, 0bfd66d529a55807
@@ -713,9 +714,9 @@ smartadserver.com, 5530, RESELLER
 smartadserver.com, 5070, RESELLER, 060d053dcf45cbf3
 smartadserver.com, 4083, RESELLER
 smartadserver.com, 4140, RESELLER
-smartadserver.com, 4125, RESELLER, 060d053dcf45cbf3
 smartadserver.com, 1331, RESELLER, 060d053dcf45cbf3
 smartadserver.com, 3713, RESELLER, 060d053dcf45cbf3
+smartadserver.com, 4125, RESELLER, 060d053dcf45cbf3
 smartadserver.com, 3817, RESELLER
 smartadserver.com, 3232, RESELLER
 smartadserver.com, 3564, RESELLER
@@ -738,8 +739,8 @@ sonobi.com, b43e9530e7, RESELLER, d1a215d9eb5aee9e
 sonobi.com, 4a289cdd79, RESELLER, d1a215d9eb5aee9e
 sonobi.com, 0f8997d5a7, RESELLER, d1a215d9eb5aee9e
 sonobi.com, 79e197cdbc, RESELLER, d1a215d9eb5aee9e
-sonobi.com, 24f603762e, RESELLER, d1a215d9eb5aee9e
 sonobi.com, 7b37f8ccbc, RESELLER, d1a215d9eb5aee9e
+sonobi.com, 24f603762e, RESELLER, d1a215d9eb5aee9e
 sonobi.com, eaec54c63f, RESELLER, d1a215d9eb5aee9e
 sonobi.com, cc3858f35e, RESELLER, d1a215d9eb5aee9e
 sonobi.com, 292d7cb147, RESELLER, d1a215d9eb5aee9e
@@ -822,8 +823,8 @@ tubia.com, 50111, RESELLER
 tubia.com, 10715, DIRECT
 ucfunnel.com, par-BE7E29B3B48DE66BC7DDDA24E6267E29, RESELLER
 ucfunnel.com, par-8A2AD843B76A2B93CB24D4B7D694B67E, RESELLER
-uis.mobfox.com, 93308, RESELLER, 5529a3d1f59865be
 uis.mobfox.com, 1878, RESELLER, 5529a3d1f59865be
+uis.mobfox.com, 93308, RESELLER, 5529a3d1f59865be
 undertone.com, 4205, RESELLER, d954590d0cb265b9
 unifd.la, 82551, RESELLER
 velismedia.com, 1111, RESELLER
