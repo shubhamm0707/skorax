@@ -1,12 +1,19 @@
 OWNERDOMAIN=skorax.com
 
+#Admob Skorax
+google.com, pub-5187405522559087, DIRECT, f08c47fec0942fa0
+
+#Pangle Skorax
+pangleglobal.com, 5038682, DIRECT
+pubmatic.com, 161490, RESELLER, 5d62403b186f2ace
+
 #Admob
 google.com, pub-5914023817376023, DIRECT, f08c47fec0942fa0
 
 #Meta
 facebook.com, 481972428056746, DIRECT, c3e20eee3f780d68
 
-#Gadsme
+#Gadsme Skorax
 gadsme.com, cmok3w8el006eqb0j5ru4qliz, DIRECT, 6e0ed2d8104a4234
 33across.com, 0013300001kQj2HAAS, RESELLER, bbea06d9c4d2853c
 33across.com, 0015a00002oUk4aAAC, RESELLER, bbea06d9c4d2853c
