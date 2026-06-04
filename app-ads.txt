@@ -132,8 +132,6 @@ vungle.com,5f3d310a8421a5001528b750,DIRECT,c107d686becd2d77
 xandr.com, 13080, DIRECT
 yieldmo.com, 2990721854664024411, DIRECT
 
-
-
 #Resellers Start#
 
 #Amazon
