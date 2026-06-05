@@ -20,7 +20,6 @@ google.com, pub-2719175690324678, DIRECT, f08c47fec0942fa0
 pangleglobal.com, 8719975, DIRECT
 applovin.com, d46210b6d374dfdfd971064bdb574bd3, DIRECT
 unity.com, 5127327, DIRECT, 96cabb5fbdde37a7
-ironsrc.com, 479611, DIRECT
 mintegral.com, 43232, DIRECT, 0aeed750c80d6423
 vungle.com,68305228fc11e60011205004,DIRECT,c107d686becd2d77
 yandex.com, 310808473, DIRECT
