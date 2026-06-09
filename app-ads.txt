@@ -1,6 +1,7 @@
 OWNERDOMAIN=skorax.com
 
-#Mediation: Admob, Meta, Pangle,   Applovin, Unity, Mintegral,   Liftoff, Inmobi, Moloco,   DT Exchange, Bidmachine, Yandex,   PremiumAds, Amazon, Odeeo, Gadsme
+#Mediation: Admob, Meta, Pangle,   Applovin, Unity, Mintegral,   Liftoff, Inmobi, Moloco,   DT Exchange, Bidmachine, Yandex,   PremiumAds, Amazon, Odeeo, Gadsme.
+#Pending: CloudX, Nefta, Metica,  A4G, Potensus, Appbroda, Reklamup.
 
 #Skorax
 skorax.com, 1, DIRECT
