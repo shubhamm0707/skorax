@@ -1,6 +1,6 @@
 OWNERDOMAIN=skorax.com
 
-#Mediation: Admob, Meta, Pangle,  Applovin, Unity, Mintegral,  Liftoff, Moloco, Inmobi,  DT Exchange, Bidmachine, Yandex,  PremiumAds, Amazon, Odeeo,  Gadsme, Crackle, Nefta,  Metica, CloudX
+#Mediation: Admob, Meta, Pangle,  Applovin, Unity, Mintegral,  Liftoff, Moloco, Inmobi,  DT Exchange, Bidmachine, Yandex,  PremiumAds, Amazon, Gadsme,  Odeeo, Crackle, Nefta,  Metica, CloudX
 
 #Skorax
 skorax.com, 1, DIRECT
@@ -136,61 +136,6 @@ pubmatic.com, 156439, RESELLER, 5d62403b186f2ace
 pubmatic.com, 154037, RESELLER, 5d62403b186f2ace
 openx.com, 537149888, RESELLER, 6a698e2ec38604c6
 appnexus.com, 3703, RESELLER, f5ab79cb980f11d1
-
-#Odeeo
-soundstack.com, stack-449, RESELLER, 7eced0fa02afc202
-improvedigital.com, 2690, RESELLER
-appnexus.com,10490,RESELLER,f5ab79cb980f11d1
-video.unrulymedia.com,666216500618530556,RESELLER
-appnexus.com,12840,RESELLER,f5ab79cb980f11d1
-contextweb.com,562906,RESELLER,89ff185a4c4e857c
-yieldmo.com,3078438591206989879,RESELLER
-tritondigital.com,162223,DIRECT,19b4454d0b87b58b
-supply.colossusssp.com,505,RESELLER,6c5b49d96ec1b458
-amitydigital.io,462,RESELLER
-targetspot.com,231,DIRECT,feb28ed826dcf532
-tritondigital.com,94813,DIRECT,19b4454d0b87b58b
-adswizz.com,odeeo,DIRECT
-appnexus.com,12447,RESELLER,f5ab79cb980f11d1
-smartadserver.com,4925,RESELLER,060d053dcf45cbf3
-tritondigital.com,141193,RESELLER,19b4454d0b87b58b
-audire.fm,1359,RESELLER
-lijit.com,550531,RESELLER,fafdf38b16bf6b2b
-consumable.com,2001621,RESELLER,aefcd3d2f45b5070
-media.net,8CUAU7HF1,RESELLER
-tritondigital.com,94813,RESELLER,19b4454d0b87b58b
-targetspot.com,231,RESELLER,feb28ed826dcf532
-conversantmedia.com,100704,RESELLER,03113cd04947736d
-adswizz.com,odeeo,RESELLER
-adswizz.com,484,RESELLER
-thisisdax.com,5374,RESELLER
-improvedigital.com,2174_231,RESELLER
-video.unrulymedia.com,744858541,RESELLER
-adswizz.com,584,RESELLER
-adswizz.com,172,RESELLER
-pubmatic.com,165207,RESELLER,5d62403b186f2ace
-adswizz.com,80,RESELLER
-adswizz.com,318,RESELLER
-improvedigital.com,2174,RESELLER
-smartadserver.com,4525,RESELLER,060d053dcf45cbf3
-rubiconproject.com,20488,RESELLER,0bfd66d529a55807
-rubiconproject.com,24084,RESELLER,0bfd66d529a55807
-tritondigital.com,44733,RESELLER,19b4454d0b87b58b
-appnexus.com,1577,RESELLER,f5ab79cb980f11d1
-adswizz.com,targetspot,RESELLER
-thisisdax.com,dax,RESELLER
-thisisdax.com,5285,RESELLER
-thisisdax.com,5288,RESELLER
-rubiconproject.com,16418,RESELLER,0bfd66d529a55807
-rubiconproject.com,9753,RESELLER,0bfd66d529a55807
-rubiconproject.com,9755,RESELLER,0bfd66d529a55807
-xandr.com,14168,RESELLER
-appnexus.com,7265,RESELLER,f5ab79cb980f11d1
-audire.fm, 1359, RESELLER
-tritondigital.com, 141193, RESELLER, 19b4454d0b87b58b
-google.com, pub-4718783897205493, RESELLER, f08c47fec0942fa0
-smartadserver.com, 4925, RESELLER, 060d053dcf45cbf3
-loopme.com, 5679, RESELLER, 6c8d5f95897a5a3b
 
 #Yandex
 e-planning.net, 2f3a04630ba9ba3f, RESELLER, c1ba615865ed87b2
@@ -356,6 +301,61 @@ spinx.biz, 1373698890, RESELLER
 video.unrulymedia.com, 475093422, RESELLER
 rubiconproject.com, 27714, RESELLER, 0bfd66d529a55807
 orbrx.ai, 8000869124, RESELLER
+
+#Odeeo
+soundstack.com, stack-449, RESELLER, 7eced0fa02afc202
+improvedigital.com, 2690, RESELLER
+appnexus.com,10490,RESELLER,f5ab79cb980f11d1
+video.unrulymedia.com,666216500618530556,RESELLER
+appnexus.com,12840,RESELLER,f5ab79cb980f11d1
+contextweb.com,562906,RESELLER,89ff185a4c4e857c
+yieldmo.com,3078438591206989879,RESELLER
+tritondigital.com,162223,DIRECT,19b4454d0b87b58b
+supply.colossusssp.com,505,RESELLER,6c5b49d96ec1b458
+amitydigital.io,462,RESELLER
+targetspot.com,231,DIRECT,feb28ed826dcf532
+tritondigital.com,94813,DIRECT,19b4454d0b87b58b
+adswizz.com,odeeo,DIRECT
+appnexus.com,12447,RESELLER,f5ab79cb980f11d1
+smartadserver.com,4925,RESELLER,060d053dcf45cbf3
+tritondigital.com,141193,RESELLER,19b4454d0b87b58b
+audire.fm,1359,RESELLER
+lijit.com,550531,RESELLER,fafdf38b16bf6b2b
+consumable.com,2001621,RESELLER,aefcd3d2f45b5070
+media.net,8CUAU7HF1,RESELLER
+tritondigital.com,94813,RESELLER,19b4454d0b87b58b
+targetspot.com,231,RESELLER,feb28ed826dcf532
+conversantmedia.com,100704,RESELLER,03113cd04947736d
+adswizz.com,odeeo,RESELLER
+adswizz.com,484,RESELLER
+thisisdax.com,5374,RESELLER
+improvedigital.com,2174_231,RESELLER
+video.unrulymedia.com,744858541,RESELLER
+adswizz.com,584,RESELLER
+adswizz.com,172,RESELLER
+pubmatic.com,165207,RESELLER,5d62403b186f2ace
+adswizz.com,80,RESELLER
+adswizz.com,318,RESELLER
+improvedigital.com,2174,RESELLER
+smartadserver.com,4525,RESELLER,060d053dcf45cbf3
+rubiconproject.com,20488,RESELLER,0bfd66d529a55807
+rubiconproject.com,24084,RESELLER,0bfd66d529a55807
+tritondigital.com,44733,RESELLER,19b4454d0b87b58b
+appnexus.com,1577,RESELLER,f5ab79cb980f11d1
+adswizz.com,targetspot,RESELLER
+thisisdax.com,dax,RESELLER
+thisisdax.com,5285,RESELLER
+thisisdax.com,5288,RESELLER
+rubiconproject.com,16418,RESELLER,0bfd66d529a55807
+rubiconproject.com,9753,RESELLER,0bfd66d529a55807
+rubiconproject.com,9755,RESELLER,0bfd66d529a55807
+xandr.com,14168,RESELLER
+appnexus.com,7265,RESELLER,f5ab79cb980f11d1
+audire.fm, 1359, RESELLER
+tritondigital.com, 141193, RESELLER, 19b4454d0b87b58b
+google.com, pub-4718783897205493, RESELLER, f08c47fec0942fa0
+smartadserver.com, 4925, RESELLER, 060d053dcf45cbf3
+loopme.com, 5679, RESELLER, 6c8d5f95897a5a3b
 
 #Gadsme
 inventorypartnerdomain=gadsme.com
