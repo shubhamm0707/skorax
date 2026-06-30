@@ -1168,6 +1168,7 @@ triplelift.com, 14502, RESELLER, 6c33edb13117fd86
 triplelift.com, 10521, RESELLER, 6c33edb13117fd86
 triplelift.com, 12353, RESELLER, 6c33edb13117fd86
 triplelift.com, 13686, DIRECT, 6c33edb13117fd86
+triplelift.com, 14814, RESELLER, 6c33edb13117fd86
 triplelift.com, 13686-EB, DIRECT, 6c33edb13117fd86
 triplelift.com, 14744, RESELLER, 6c33edb13117fd86
 tritondigital.com, 44733, RESELLER, 19b4454d0b87b58b
