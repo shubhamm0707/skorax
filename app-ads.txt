@@ -16,6 +16,7 @@ google.com, pub-5914023817376023, DIRECT, f08c47fec0942fa0
 facebook.com, 481972428056746, DIRECT, c3e20eee3f780d68
 
 #Ultimate
+google.com, pub-9301881311876613, DIRECT, f08c47fec0942fa0
 google.com, pub-2719175690324678, DIRECT, f08c47fec0942fa0
 pangleglobal.com, 8719975, DIRECT
 applovin.com, d46210b6d374dfdfd971064bdb574bd3, DIRECT
