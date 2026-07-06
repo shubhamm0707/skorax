@@ -394,6 +394,8 @@ adingenious.com, 70004, RESELLER
 adingo.jp, 34490, RESELLER
 adipolo.com, 102039, DIRECT
 admagnetix.io, 202141, RESELLER
+adyoulike.com, 555e2711ab0a880b922eb2c65c19fe22, RESELLER
+pgamssp.com, 68c4001c1f2f47a67403c3f7, RESELLER
 admanmedia.com, 552, RESELLER
 admanmedia.com, 2151, RESELLER
 admanmedia.com, 2234, DIRECT
