@@ -3999,6 +3999,7 @@ verve.com, 5897, RESELLER, 0c8f5958fc2d6270
 
 #Mintegral
 pokkt.com, 7139, RESELLER, c45702d9311e25fd
+indexexchange.com, 216513, RESELLER, 50b1c356f2c5c8fc
 appads.in, 107139, RESELLER
 pubmatic.com, 160456, RESELLER, 5d62403b186f2ace
 pubmatic.com, 156520, RESELLER, 5d62403b186f2ace
