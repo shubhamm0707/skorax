@@ -647,6 +647,7 @@ gitberry.com, 117000034, DIRECT
 google.com, pub-6346866704322274, RESELLER, f08c47fec0942fa0
 google.com, pub-3565385483761681, RESELLER, f08c47fec0942fa0
 google.com, pub-5717092533913515, RESELLER, f08c47fec0942fa0
+google.com, pub-7756262923332577, RESELLER, f08c47fec0942fa0
 gothamads.com, 987, RESELLER, d9c86e5dec870222
 hax.ortb.net, 655942, DIRECT
 hax.ortb.net, 655942, RESELLER
