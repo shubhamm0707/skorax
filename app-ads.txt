@@ -5880,7 +5880,6 @@ adform.com, 3354, RESELLER, 9f5210a2f0999e32
 adagio.io, 1587, RESELLER
 adsmartx.ai, 729329, RESELLER
 thunder-monetize.com, 3905806597, RESELLER
-openx.com, 537100188, RESELLER, 6a698e2ec3
 xandr.com, 13799, RESELLER
 pubmatic.com, 164891, RESELLER, 5d62403b186f2ace
 triplelift.com, 12552, RESELLER, 6c33edb13117fd86
