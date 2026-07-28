@@ -1,5 +1,11 @@
 OWNERDOMAIN=skorax.com
 
+#Admob, Meta, Pangle, Applovin, Unity, Mintegral, Liftoff#
+#Moloco, Inmobi, Dt, Bidmachine, Yandex, PremiumAds GAM, Amazon#
+#Gadsme, Odeeo, Adverty, Pubscale#
+#Nefta, Metica, CloudX, AppleAds#
+#Direct, Iap, Affiliate, Brand, Cross#
+
 #Skorax
 skorax.com, 1, DIRECT
 google.com, pub-5187405522559087, DIRECT, f08c47fec0942fa0
@@ -56,12 +62,6 @@ vungle.com,642fcca2b04a200010798b74,DIRECT,c107d686becd2d77
 premiumads.net, 21280, DIRECT
 premiumads.com.br, 21280, DIRECT
 g-global.net, 21280, DIRECT
-
-#Admob, Meta, Pangle, Applovin, Unity, Mintegral, Liftoff
-#Moloco, Inmobi, Dt, Bidmachine, Yandex, PremiumAds GAM, Amazon
-#Gadsme, Odeeo, Adverty, Pubscale
-#Nefta, Metica, CloudX, AppleAds
-#Direct, Iap, Affiliate, Cross, Brand
 
 #Resellers Start#
 
