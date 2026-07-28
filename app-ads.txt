@@ -53,6 +53,12 @@ premiumads.net, 21280, DIRECT
 premiumads.com.br, 21280, DIRECT
 g-global.net, 21280, DIRECT
 
+#Pubscale
+greedygame.com,4271123325769715,direct
+google.com,pub-1067374679252537,reseller,f08c47fec0942fa0
+google.com,pub-2749054827332983,reseller,f08c47fec0942fa0
+google.com,pub-4686405784285870,reseller,f08c47fec0942fa0
+
 #Resellers Start#
 
 #Amazon
