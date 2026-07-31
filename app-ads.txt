@@ -1,10 +1,6 @@
 OWNERDOMAIN=skorax.com
 
-#Admob, Meta, Pangle, Applovin, Unity, Mintegral, Liftoff, Yandex#
-#Moloco, Inmobi, Dt, Bidmachine, PremiumAds/Yieldmonk GAM#
-#Gadsme, Odeeo, Adverty, Pubscale#
-#Nefta, Metica, Gsl, Felix, CloudX, AppleAds#
-#Direct, Iap, Affiliate, Brand, Cross#
+#Admob, Meta, Pangle, Applovin, Unity, Mintegral, Liftoff, Yandex, Moloco, Inmobi, Dt, Bidmachine, PremiumAds Gam, Gadsme, Odeeo, Adverty, Pubscale, Metica, Gsl, CloudX#
 
 #Skorax
 skorax.com, 1, DIRECT
