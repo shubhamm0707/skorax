@@ -358,6 +358,8 @@ inventorypartnerdomain=gadsme.com
 33across.com, 0015a00002oUk4aAAC, RESELLER, bbea06d9c4d2853c
 33across.com, 001Pg0000197KcKIAU, RESELLER, bbea06d9c4d2853c
 9dotsmedia.com, 5512, RESELLER, 45ff185b4c4e857d
+ogury.com, 5bbe7af9-d51f-499e-a804-db54798d96f4, RESELLER
+sharethrough.com, 4537, RESELLER, 060d053dcf45cbf3
 adagio.io, 1636, RESELLER
 adagio.io, 1575, RESELLER
 adagio.io, 1438, RESELLER
