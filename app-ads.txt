@@ -72,6 +72,8 @@ pubmatic.com, 156378, RESELLER, 5d62403b186f2ace
 rubiconproject.com, 15410, RESELLER, 0bfd66d529a55807
 rubiconproject.com, 19674, RESELLER, 0bfd66d529a55807
 teads.tv, 13576, DIRECT, 15a9c44f6d26cbe1
+conversantmedia.com, 101282, RESELLER
+ubmatic.com, 165117, RESELLER, 5d62403b186f2ace
 appnexus.com, 9794, RESELLER, f5ab79cb980f11d1
 smartclip.net, 10870, RESELLER
 triplelift.com, 9657, RESELLER, 6c33edb13117fd86
