@@ -366,6 +366,8 @@ triplelift.com, 13686, RESELLER, 6c33edb13117fd86
 triplelift.com, 13686-EB, RESELLER, 6c33edb13117fd86
 conversantmedia.com, 101282, RESELLER
 ubmatic.com, 165117, RESELLER, 5d62403b186f2ace
+appnexus.com, 806, RESELLER, f5ab79cb980f11d1
+triplelift.com, 6059, RESELLER, 6c33edb13117fd86
 adagio.io, 1636, RESELLER
 adagio.io, 1575, RESELLER
 adagio.io, 1438, RESELLER
