@@ -1,4 +1,4 @@
-OwnerDomain=skorax.com
+OWNERDOMAIN=skorax.com
 
 #Admob, Meta, Pangle, Applovin, Unity, Mintegral, Liftoff, Yandex, Moloco, Inmobi, Dt, Bidmachine, PremiumAds Gam, Gadsme, Odeeo, Pubscale, Metica, CloudX, Affiliate, Cross#
 
