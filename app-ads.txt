@@ -360,6 +360,7 @@ inventorypartnerdomain=gadsme.com
 9dotsmedia.com, 5512, RESELLER, 45ff185b4c4e857d
 video.unrulymedia.com, 1767448067723954599, RESELLER
 zetaglobal.net, 964, RESELLER
+loopme.com, 11528, RESELLER, 6c8d5f95897a5a3b
 adagio.io, 1636, RESELLER
 adagio.io, 1575, RESELLER
 adagio.io, 1438, RESELLER
