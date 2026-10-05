@@ -33,18 +33,7 @@ yandex.com, 310808473, DIRECT
 yango-ads.com, 310808473, DIRECT
 
 #Infinity
-google.com, pub-2864154863223892, DIRECT, f08c47fec0942fa0
-google.com, pub-9272529582819243, DIRECT, f08c47fec0942fa0
-google.com, pub-2707646798558000, DIRECT, f08c47fec0942fa0
-google.com, pub-1099102116410689, DIRECT, f08c47fec0942fa0
-google.com, pub-3417769219752908, DIRECT, f08c47fec0942fa0
-google.com, pub-8754231098699607, DIRECT, f08c47fec0942fa0
 google.com, pub-7462273888693209, DIRECT, f08c47fec0942fa0
-google.com, pub-7208941695689653, DIRECT, f08c47fec0942fa0
-google.com, pub-6691965685689933, DIRECT, f08c47fec0942fa0
-google.com, pub-3940256099942544, DIRECT, f08c47fec0942fa0
-google.com, pub-1582444887921776, DIRECT, f08c47fec0942fa0
-google.com, pub-6036316081065822, DIRECT, f08c47fec0942fa0
 facebook.com, 3421860044535948, DIRECT, c3e20eee3f780d68
 facebook.com, 648297173403004, DIRECT, c3e20eee3f780d68
 facebook.com, 681792796500174, DIRECT, c3e20eee3f780d68
@@ -56,9 +45,6 @@ applovin.com, 8fe432367206b70bb675f3b813adba36, DIRECT
 unity.com, AccountID, DIRECT, 96cabb5fbdde37a7
 mintegral.com, 34745, DIRECT, 0aeed750c80d6423
 vungle.com,642fcca2b04a200010798b74,DIRECT,c107d686becd2d77
-premiumads.net, 21280, DIRECT
-premiumads.com.br, 21280, DIRECT
-g-global.net, 21280, DIRECT
 
 #Resellers Start#
 
