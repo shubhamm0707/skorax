@@ -1,6 +1,6 @@
 OWNERDOMAIN=skorax.com
 
-#Admob, Meta, Pangle, Applovin, Unity, Mintegral, Liftoff, Moloco, Inmobi, Yandex, Gadsme, Pubscale, Tapmind, Metica, CloudX, Affiliate, Cross#
+#Admob, Meta, Pangle, Applovin, Unity, Mintegral, Liftoff, Moloco, Inmobi, Yandex, Gadsme, Tapmind, Metica, CloudX, Affiliate, Cross#
 
 #Skorax
 skorax.com, 1, DIRECT
@@ -10,16 +10,11 @@ vungle.com,691c3c66f84dffcb570869a4,DIRECT,c107d686becd2d77
 yandex.com, 321057619, DIRECT
 yango-ads.com, 321057619, DIRECT
 gadsme.com, cmok3w8el006eqb0j5ru4qliz, DIRECT, 6e0ed2d8104a4234
+tapmind.com, TMP10476, DIRECT
 
 #Ravi
 google.com, pub-5914023817376023, DIRECT, f08c47fec0942fa0
 facebook.com, 481972428056746, DIRECT, c3e20eee3f780d68
-
-#Pubscale
-greedygame.com, 4271123325769715, DIRECT
-google.com, pub-1067374679252537, RESELLER, f08c47fec0942fa0
-google.com, pub-2749054827332983, RESELLER, f08c47fec0942fa0
-google.com,pub-4686405784285870, RESELLER, f08c47fec0942fa0
 
 #Max
 google.com, pub-9301881311876613, DIRECT, f08c47fec0942fa0
@@ -50,7 +45,6 @@ vungle.com,642fcca2b04a200010798b74,DIRECT,c107d686becd2d77
 #Resellers Start#
 
 #Tapmind
-tapmind.com, TMP10476, DIRECT
 google.com, pub-1714061154748628, RESELLER, f08c47fec0942fa0
 google.com, pub-8686615022940025, RESELLER, f08c47fec0942fa0
 kickads.mobi, 89, DIRECT
@@ -160,6 +154,10 @@ bidmatic.io, b-4b0ed, RESELLER
 criteo.com, B-060555, RESELLER, 9fac4a4a87c2a44f
 smartadserver.com, 6015, RESELLER, 060d053dcf45cbf3
 sharethrough.com, 6015, RESELLER, 060d053dcf45cbf3
+greedygame.com, 4271123325769715, DIRECT
+google.com, pub-1067374679252537, RESELLER, f08c47fec0942fa0
+google.com, pub-2749054827332983, RESELLER, f08c47fec0942fa0
+google.com,pub-4686405784285870, RESELLER, f08c47fec0942fa0
 
 #Applovin
 adyoulike.com, 2d578cf695c89ec2ba707280319d2020, RESELLER
