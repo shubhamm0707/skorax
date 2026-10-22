@@ -1944,6 +1944,13 @@ inventorypartnerdomain=gadsme.com
 33across.com, 001Pg0000197KcKIAU, RESELLER, bbea06d9c4d2853c
 9dotsmedia.com, 5512, RESELLER, 45ff185b4c4e857d
 adform.com, 3268, RESELLER, 9f5210a2f0999e32
+brightcom.com, 71486, RESELLER
+getmediamx.com, 1271486, RESELLER
+onlinemediasolutions.com, 71486, RESELLER, b3868b187e4b6402
+sharethrough.com, 4253, RESELLER, d53b998a7bd4ecd2
+smartadserver.com, 4253, RESELLER, 060d053dcf45cbf3
+triplelift.com, 10250, RESELLER, 6c33edb13117fd86
+triplelift.com, 14829, RESELLER, 6c33edb13117fd86
 eskimi.com, 2020001208, RESELLER
 improvedigital.com, 2541, RESELLER
 intenze.co, 315, RESELLER
