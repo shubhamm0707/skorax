@@ -1,79 +1,176 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Skorax</title>
-  <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/ravi2026131/testwebsite/main/skorax%20favicon-modified.png" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background: #000;
-      color: #fff;
-      font-family: Arial, sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      text-align: center;
-    }
-    .logo img {
-      width: 300px;
-    }
-    .desc {
-      margin-top: 20px;
-      font-size: 20px;
-      opacity: 0.9;
-      font-family: 'Poppins', sans-serif;
-      font-weight: 200;
-    }
-    .socials {
-      margin-top: 40px;
-      display: flex;
-      gap: 25px;
-    }
-    .socials a {
-      width: 42px;
-      height: 42px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 12px;
-      background: rgba(255, 255, 255, 0.08);
-      backdrop-filter: blur(8px);
-      transition: 0.25s ease;
-      text-decoration: none;
-    }
-    .socials a:hover {
-      background: rgba(255, 255, 255, 0.18);
-      transform: translateY(-4px);
-    }
-    .socials img {
-      width: 22px;
-      filter: invert(1);
-      opacity: 0.9;
-      transition: opacity 0.25s ease;
-    }
-    .socials a:hover img {
-      opacity: 1;
-    }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Skorax | Mobile game studio</title>
+  <meta name="description" content="Skorax LLC is a mobile game studio that develops and publishes open-world driving games for Android, with over 20 million downloads on Google Play.">
+  <link rel="canonical" href="https://www.skorax.com/">
+  <meta name="theme-color" content="#000000">
+  <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/ravi2026131/testwebsite/main/skorax%20favicon-modified.png">
+
+  <!-- How the site looks when the link is shared -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Skorax">
+  <meta property="og:url" content="https://www.skorax.com/">
+  <meta property="og:title" content="Skorax | Mobile game studio">
+  <meta property="og:description" content="Open-world driving games for Android, with over 20 million downloads on Google Play.">
+  <meta property="og:image" content="https://raw.githubusercontent.com/ravi2026131/testwebsite/main/logo.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600&family=Saira:ital,wdth,wght@1,100..125,600..900&display=swap">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Company details for Google search -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Skorax LLC",
+    "alternateName": "Skorax",
+    "url": "https://www.skorax.com/",
+    "logo": "https://raw.githubusercontent.com/ravi2026131/testwebsite/main/logo.png",
+    "email": "support@skorax.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "30 N Gould St #47113",
+      "addressLocality": "Sheridan",
+      "addressRegion": "WY",
+      "postalCode": "82801",
+      "addressCountry": "US"
+    },
+    "sameAs": [
+      "https://play.google.com/store/apps/dev?id=4613852029246071805",
+      "https://www.youtube.com/@skorax"
+    ]
+  }
+  </script>
 </head>
 <body>
-  <div class="logo">
-    <img src="https://raw.githubusercontent.com/ravi2026131/testwebsite/main/logo.png" alt="Skorax Logo" />
-  </div>
+  <a class="skip" href="#games">Skip to games</a>
 
-  <div class="desc">Skorax is mobile games developer and publisher.</div>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="./" aria-label="Skorax home">
+        <img src="https://raw.githubusercontent.com/ravi2026131/testwebsite/main/logo.png" alt="Skorax" width="151" height="34">
+      </a>
+      <nav class="nav" aria-label="Main">
+        <a href="#games">Games</a>
+        <a href="#partners">Partners</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-  <div class="socials">
-    <a href="https://play.google.com/store/apps/developer?id=Skorax"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/googleplay.svg" /></a>
-    <a href="https://www.youtube.com/@skorax"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg" /></a>
-    <a href="https://www.instagram.com/_skorax"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" /></a>
-    <a href="https://x.com/skorax_"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/x.svg" /></a>
-  </div>
+  <main>
+
+    <section class="intro wrap" aria-labelledby="intro-title">
+      <h1 id="intro-title" class="visually-hidden">Skorax LLC, mobile game studio</h1>
+      <p class="intro-text">Skorax is a mobile game studio. We develop and publish <span class="nowrap">open-world</span> driving games for Android, with over 20 million downloads on Google Play.</p>
+      <a class="badge" href="https://play.google.com/store/apps/dev?id=4613852029246071805" target="_blank" rel="noopener">
+        <img src="images/google-play-badge.png" alt="Skorax games on Google Play" width="180" height="53">
+      </a>
+    </section>
+
+    <!-- GAMES
+         To add a game: copy one <li class="game"> ... </li> block and change the
+         icon link, name and Google Play link. The icon link comes from the game's
+         Google Play page (right-click the icon > Copy image address). -->
+    <section class="section wrap" id="games" aria-labelledby="games-title">
+      <h2 id="games-title">Games</h2>
+      <ul class="games">
+
+        <li class="game">
+          <img class="game-icon" src="https://play-lh.googleusercontent.com/m7ucnL3kWDgYJhb29pJCSmxyaODR_ocvYuuqfnz6ybXQzb4rk6zw34H3WWLYkEATFSsyUW9P9Jz8QxG5-L4m=w240-h480" alt="" width="120" height="120" loading="lazy">
+          <div class="game-body">
+            <h3>Indian GT5 Bikes 3D</h3>
+            <p class="downloads">5M+ downloads</p>
+            <a class="badge" href="https://play.google.com/store/apps/details?id=com.Skorax.IndianBikeCarGT5" target="_blank" rel="noopener">
+              <img src="images/google-play-badge.png" alt="Get Indian GT5 Bikes 3D on Google Play" width="150" height="45" loading="lazy">
+            </a>
+          </div>
+        </li>
+
+        <li class="game">
+          <img class="game-icon" src="https://play-lh.googleusercontent.com/Z6t9KMZgJ3zpYEuGS0cDaGLEs5Ms5JyG46X_huGEVw4X3Ai4d6zOwNvbPCqDrb1SKrUisgGB0jrGvVUmlZOt0w=w240-h480" alt="" width="120" height="120" loading="lazy">
+          <div class="game-body">
+            <h3>Super Street Legends</h3>
+            <p class="downloads">5M+ downloads</p>
+            <a class="badge" href="https://play.google.com/store/apps/details?id=com.Skorax.GangsterCrimeCity" target="_blank" rel="noopener">
+              <img src="images/google-play-badge.png" alt="Get Super Street Legends on Google Play" width="150" height="45" loading="lazy">
+            </a>
+          </div>
+        </li>
+
+        <li class="game">
+          <img class="game-icon" src="https://play-lh.googleusercontent.com/aPul3xTRBX6tNeVQbt9qaUH4tiSBthhdJH-tma-oAV6RxCFyAi0uyxu-n17haQAA7VI0zu7vne1L6zJiKsJIHw=w240-h480" alt="" width="120" height="120" loading="lazy">
+          <div class="game-body">
+            <h3>Indian Rider Bikes 3D</h3>
+            <p class="downloads">1M+ downloads</p>
+            <a class="badge" href="https://play.google.com/store/apps/details?id=com.Skorax.IndianRider" target="_blank" rel="noopener">
+              <img src="images/google-play-badge.png" alt="Get Indian Rider Bikes 3D on Google Play" width="150" height="45" loading="lazy">
+            </a>
+          </div>
+        </li>
+
+        <li class="game">
+          <img class="game-icon" src="https://play-lh.googleusercontent.com/wPpQcq0UZQZ1yqtu12jDK86ulgRiMZMXNrxjdb16musGc6Sm95ytu3StxoXpt2H1LsPkntI3_sAW57GzWFXrcw=w240-h480" alt="" width="120" height="120" loading="lazy">
+          <div class="game-body">
+            <h3>Indian Super Bikes 3D</h3>
+            <p class="downloads">500K+ downloads</p>
+            <a class="badge" href="https://play.google.com/store/apps/details?id=com.Skorax.UltimateRider" target="_blank" rel="noopener">
+              <img src="images/google-play-badge.png" alt="Get Indian Super Bikes 3D on Google Play" width="150" height="45" loading="lazy">
+            </a>
+          </div>
+        </li>
+
+      </ul>
+    </section>
+
+    <!-- PARTNERS: logo files are in the images folder -->
+    <section class="section wrap" id="partners" aria-labelledby="partners-title">
+      <h2 id="partners-title">Partners</h2>
+      <ul class="partners">
+        <li><img src="images/google-admob.png" alt="Google AdMob" width="159" height="30" loading="lazy"></li>
+        <li><img src="images/google-ads.png" alt="Google Ads" width="141" height="26" loading="lazy"></li>
+        <li><img src="images/meta.png" alt="Meta" width="129" height="26" loading="lazy"></li>
+        <li><img src="images/gadsme.png" alt="Gadsme" width="139" height="28" loading="lazy"></li>
+      </ul>
+    </section>
+
+    <section class="section wrap info" aria-label="About and contact">
+      <div id="about">
+        <h2>About</h2>
+        <p>Skorax LLC is a mobile game studio that designs, develops and publishes mobile games. Our open-world driving games for Android are supported by in-game advertising and updated regularly for our players.</p>
+      </div>
+      <div id="contact">
+        <h2>Contact</h2>
+        <a class="email" href="mailto:support@skorax.com">support@skorax.com</a>
+        <address>
+          Skorax LLC<br>
+          30 N Gould St #47113<br>
+          Sheridan, WY 82801<br>
+          United States
+        </address>
+        <ul class="links">
+          <li><a href="https://play.google.com/store/apps/dev?id=4613852029246071805" target="_blank" rel="noopener">Google Play</a></li>
+          <li><a href="https://www.youtube.com/@skorax" target="_blank" rel="noopener">YouTube</a></li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>&copy; <span id="year">2026</span> Skorax LLC</p>
+      <a href="privacy.html">Privacy policy</a>
+    </div>
+  </footer>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>
 </html>
