@@ -1942,6 +1942,8 @@ inventorypartnerdomain=gadsme.com
 33across.com, 0015a00003DKg9ZAAT, RESELLER, bbea06d9c4d2853c
 33across.com, 0015a00002oUk4aAAC, RESELLER, bbea06d9c4d2853c
 33across.com, 001Pg0000197KcKIAU, RESELLER, bbea06d9c4d2853c
+appnexus.com, 15670, RESELLER, f5ab79cb980f11d1
+triplelift.com, 14851, RESELLER, 6c33edb13117fd86
 9dotsmedia.com, 5512, RESELLER, 45ff185b4c4e857d
 adform.com, 3268, RESELLER, 9f5210a2f0999e32
 conversantmedia.com, 101145, RESELLER
