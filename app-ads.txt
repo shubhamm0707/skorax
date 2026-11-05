@@ -1942,6 +1942,24 @@ inventorypartnerdomain=gadsme.com
 33across.com, 0015a00003DKg9ZAAT, RESELLER, bbea06d9c4d2853c
 33across.com, 0015a00002oUk4aAAC, RESELLER, bbea06d9c4d2853c
 33across.com, 001Pg0000197KcKIAU, RESELLER, bbea06d9c4d2853c
+axis-marketplace.com, 444, RESELLER
+e-planning.net, 842e76d97795cf96, RESELLER
+nexverse.ai, 24351, RESELLER
+onetag.com, 969f41d776e4d69, RESELLER
+revealon.media, 18047, DIRECT
+revealon.media, 18048, DIRECT
+revealon.media, 18054, DIRECT
+revealon.media, 18052, DIRECT
+revealon.media, 18058, DIRECT
+sharethrough.com, 5881, RESELLER
+smartadserver.com, 5881, RESELLER
+sonobi.com, 4d1a8bf76a, RESELLER, d1a215d9eb5aee9e
+themediagrid.com, I7V9Q1, RESELLER, 9fac4a4a87c2a44f
+wecallmedia.com, 1105, DIRECT
+wecallmedia.com, 1018, RESELLER
+wecallmedia.com, 1004, DIRECT
+wecallmedia.com, 1106, DIRECT
+wecallmedia.com, 1107, DIRECT
 adagio.io, 1439, RESELLER
 display.io, 229046, RESELLER
 eskimi.com, 2020000014, RESELLER
