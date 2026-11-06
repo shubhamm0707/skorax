@@ -1942,6 +1942,8 @@ inventorypartnerdomain=gadsme.com
 33across.com, 0015a00003DKg9ZAAT, RESELLER, bbea06d9c4d2853c
 33across.com, 0015a00002oUk4aAAC, RESELLER, bbea06d9c4d2853c
 33across.com, 001Pg0000197KcKIAU, RESELLER, bbea06d9c4d2853c
+sharethrough.com, 3837, RESELLER, 060d053dcf45cbf3
+smartadserver.com, 3837, RESELLER, 060d053dcf45cbf3
 axis-marketplace.com, 444, RESELLER
 e-planning.net, 842e76d97795cf96, RESELLER
 nexverse.ai, 24351, RESELLER
